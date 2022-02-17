@@ -37,17 +37,18 @@ function CreateItem(item) {
   });
 
   li.addEventListener("click", () => {
-    li.style.textDecoration = "line-through";
-    li.style.opacity = "0.5";
-});
-}
-
-deleteAll.addEventListener("click", DeleteButton);
-
-function DeleteButton(){
-    if(list.lenght > 0){
-        deleteAll.classList.remove("checked");
-    }else{
-        deleteAll.classList.add("checked");
+    if (li.style.textDecoration == "none") {
+      li.style.textDecoration = "line-through";
+      li.style.opacity = "0.5";
+    } else {
+      li.style.textDecoration = "none";
+      li.style.opacity = "1";
     }
-};
+  });
+
+  deleteAll.addEventListener("click", () => {
+    if (li.style.textDecoration == "line-through") {
+      li.style.display = "none";
+    }
+  });
+}
