@@ -58,7 +58,11 @@ header img {
     cursor: pointer;
     width: 5em;
     height: 3em;
-    box-shadow: 5px 10px 20px lightsalmon inset
+    box-shadow: 5px 10px 20px lightsalmon inset;
+    opacity: 0.8;
+}
+.add:hover{
+    opacity: 1;
 }
 
 #input-text {
@@ -83,6 +87,7 @@ header img {
     margin: 1em;
     box-shadow: 5px 10px 20px #f9ccac inset;
     border-radius: 1em;
+
 }
 
 #deleteAll {
@@ -90,8 +95,11 @@ header img {
     background-color: #f9ccac;
     cursor: pointer;
     padding: 0.3em;
-    border: 2px solid #eca069;
-    border-radius: 5px;
+    background-color: blanchedalmond;
+    border: 2px solid #f9ccac;
+    border-radius: 7px;
+    box-shadow: 5px 10px 20px lightsalmon inset;
+    outline: 3px solid white;
     opacity: 0.7;
 }
 
