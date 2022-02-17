@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <img src="./img/write.png" alt="">
+    </header>
+
+    <main class="container">
+        <section class="input">
+            <nav class="input-text-box">
+                <input type="text" name="text" id="input-text" required>
+                <button id="add" class="add">Add</button>
+            </nav>
+        </section>
+
+        <section class="list-container">
+            <nav class="card">
+                <nav class="card-header"><span class="notes">NOTES</span> <span id="calendar"></span>
+                    <button id="deleteAll" class="deleteAll">DELETE <i class="fas fa-trash-alt"></i></button>
+                </nav>
+                <nav class="card-body">
+                    <ol id="list" >
+                    </ol>
+                </nav>
+
+            </nav>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

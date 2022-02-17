@@ -1,0 +1,131 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-top: 1em;
+    background-size: cover;
+    background-color: rgb(255, 175, 143);
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1em;
+}
+
+.container {
+    color: #ad3006;
+    width: 35rem;
+    margin: 1em;
+}
+
+.input {
+    border-radius: 2rem 2rem;
+    padding: 0.5em;
+    margin: 1em;
+    background-color: rgb(255, 239, 239);
+}
+
+#input-text {
+    text-align: center;
+    color: #721f04;
+}
+
+.input-text-box {
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    background-color: blanchedalmond;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 5em;
+    height: 3em;
+    box-shadow: 5px 10px 20px lightsalmon inset
+}
+
+#input-text {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.list-container {
+    margin: 1em;
+    background-color: rgb(255, 239, 239);
+    border-radius: 2rem 2rem;
+    padding: 1em;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.8rem;
+    margin: 1em;
+    box-shadow: 5px 10px 20px #f9ccac inset;
+    border-radius: 1em;
+}
+
+#deleteAll {
+    color: #721f04;
+    background-color: #f9ccac;
+    cursor: pointer;
+    padding: 0.3em;
+    border: 2px solid #eca069;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+#deleteAll:hover {
+    opacity: 1;
+}
+
+.fas {
+    margin-left: 0.5em;
+}
+
+ol li.checked {
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #f9ccac;
+    box-shadow: 5px 10px 20px #f9ccac inset;
+    overflow-wrap: break-word;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    box-shadow: 5px 10px 20px #f9ccac inset;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 470px) {
+    .container {
+        width: 90%;
+    }
+    .notes{
+        display: none;
+    }
+}
